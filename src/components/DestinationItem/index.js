@@ -1,12 +1,13 @@
 import './index.css'
 
 const DestinationItem = props => {
-  const {imgUrl, name} = props
+  const {destinationDetails} = props
+  const {imgUrl, name} = destinationDetails
   return (
-    <div>
+    <li>
       <img src={imgUrl} alt={name} />
-      <h1>mosque</h1>
-    </div>
+      <p>{name}</p>
+    </li>
   )
 }
 
